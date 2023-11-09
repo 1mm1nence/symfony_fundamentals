@@ -1,0 +1,19 @@
+6.
+# to show current configuration of service:
+    php bin/console debug:config *name_of_service*
+        e.g.    php bin/console debug:config twig
+
+# to have the example of data passed to yaml config file:
+    php bin/console config:dump *name_of_service*
+        e.g.    php bin/console config:dump framework
+                php bin/console config:dump framework cache
+
+# to dump data to debug tool, instead of dd(), use:
+    dump();
+
+8.
+# to see how can I use different sevices and corresponding paths to them:
+    php bin/console debug:autowiring
+
+#to have even bigger list of services, I can use:
+    php bin/console debug:container 
