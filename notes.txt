@@ -17,3 +17,6 @@
 
 #to have even bigger list of services, I can use:
     php bin/console debug:container 
+
+# to see parameters:
+    php bin/console debug:container --parameters
